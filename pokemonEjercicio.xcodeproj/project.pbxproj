@@ -16,6 +16,12 @@
 		26D6811C285B57A6001C67D6 /* pokemonEjercicioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D6811B285B57A6001C67D6 /* pokemonEjercicioTests.swift */; };
 		26D68126285B57A6001C67D6 /* pokemonEjercicioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D68125285B57A6001C67D6 /* pokemonEjercicioUITests.swift */; };
 		26D68128285B57A6001C67D6 /* pokemonEjercicioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D68127285B57A6001C67D6 /* pokemonEjercicioUITestsLaunchTests.swift */; };
+		26D68135285B57C2001C67D6 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D68134285B57C2001C67D6 /* Mappable.swift */; };
+		26D68137285B57E0001C67D6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D68136285B57E0001C67D6 /* Pokemon.swift */; };
+		26D68139285B5809001C67D6 /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D68138285B5809001C67D6 /* Sprite.swift */; };
+		26D6813B285B6F79001C67D6 /* MiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D6813A285B6F79001C67D6 /* MiTableViewController.swift */; };
+		26D6813D285B6F8E001C67D6 /* MiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D6813C285B6F8E001C67D6 /* MiTableViewCell.swift */; };
+		26D6813F285B707A001C67D6 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D6813E285B707A001C67D6 /* Connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		26D68121285B57A6001C67D6 /* pokemonEjercicioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokemonEjercicioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D68125285B57A6001C67D6 /* pokemonEjercicioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonEjercicioUITests.swift; sourceTree = "<group>"; };
 		26D68127285B57A6001C67D6 /* pokemonEjercicioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonEjercicioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26D68134285B57C2001C67D6 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		26D68136285B57E0001C67D6 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		26D68138285B5809001C67D6 /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		26D6813A285B6F79001C67D6 /* MiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiTableViewController.swift; sourceTree = "<group>"; };
+		26D6813C285B6F8E001C67D6 /* MiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiTableViewCell.swift; sourceTree = "<group>"; };
+		26D6813E285B707A001C67D6 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				26D68104285B57A4001C67D6 /* AppDelegate.swift */,
+				26D6813E285B707A001C67D6 /* Connection.swift */,
+				26D6813A285B6F79001C67D6 /* MiTableViewController.swift */,
+				26D6813C285B6F8E001C67D6 /* MiTableViewCell.swift */,
+				26D68134285B57C2001C67D6 /* Mappable.swift */,
+				26D68136285B57E0001C67D6 /* Pokemon.swift */,
+				26D68138285B5809001C67D6 /* Sprite.swift */,
 				26D68106285B57A4001C67D6 /* SceneDelegate.swift */,
 				26D68108285B57A4001C67D6 /* ViewController.swift */,
 				26D6810A285B57A4001C67D6 /* Main.storyboard */,
@@ -258,9 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D68137285B57E0001C67D6 /* Pokemon.swift in Sources */,
+				26D6813F285B707A001C67D6 /* Connection.swift in Sources */,
+				26D6813D285B6F8E001C67D6 /* MiTableViewCell.swift in Sources */,
 				26D68109285B57A4001C67D6 /* ViewController.swift in Sources */,
 				26D68105285B57A4001C67D6 /* AppDelegate.swift in Sources */,
+				26D6813B285B6F79001C67D6 /* MiTableViewController.swift in Sources */,
 				26D68107285B57A4001C67D6 /* SceneDelegate.swift in Sources */,
+				26D68139285B5809001C67D6 /* Sprite.swift in Sources */,
+				26D68135285B57C2001C67D6 /* Mappable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

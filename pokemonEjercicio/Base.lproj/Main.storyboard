@@ -1,24 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TEM-38-Dr7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Mi Table View Controller-->
+        <scene sceneID="sOc-AJ-fFr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="xBT-lF-69W" customClass="MiTableViewController" customModule="pokemonEjercicio" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7dd-9C-QuF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="0aK-cT-kqn" customClass="MiTableViewCell" customModule="pokemonEjercicio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="172.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0aK-cT-kqn" id="xl1-2w-mST">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poke_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="UBB-vN-Lhl">
+                                            <rect key="frame" x="20" y="11" width="150" height="150.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="keq-Xf-5zg"/>
+                                                <constraint firstAttribute="height" constant="150" id="y45-HT-qs7"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjy-R8-p97">
+                                            <rect key="frame" x="178" y="33" width="216" height="107"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="216" id="idR-mj-9hS"/>
+                                                <constraint firstAttribute="height" constant="107" id="mB6-jq-smU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="UBB-vN-Lhl" firstAttribute="leading" secondItem="xl1-2w-mST" secondAttribute="leadingMargin" id="7nB-SE-TLC"/>
+                                        <constraint firstItem="UBB-vN-Lhl" firstAttribute="top" secondItem="xl1-2w-mST" secondAttribute="topMargin" id="Lxy-QZ-2yD"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UBB-vN-Lhl" secondAttribute="bottom" id="SUX-YJ-Ypq"/>
+                                        <constraint firstItem="Gjy-R8-p97" firstAttribute="trailing" secondItem="xl1-2w-mST" secondAttribute="trailingMargin" id="zQG-Sa-pZO"/>
+                                        <constraint firstItem="Gjy-R8-p97" firstAttribute="top" secondItem="xl1-2w-mST" secondAttribute="topMargin" constant="22" id="zT6-T7-okf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pokemonImage" destination="UBB-vN-Lhl" id="1cp-W5-vOw"/>
+                                    <outlet property="pokemonNameLabel" destination="Gjy-R8-p97" id="m1V-kp-c40"/>
+                                    <segue destination="DM7-li-fab" kind="show" identifier="next" id="hkf-tt-wD4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xBT-lF-69W" id="FT5-nF-RUm"/>
+                            <outlet property="delegate" destination="xBT-lF-69W" id="TmU-Rd-Qzb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="d3p-z8-GjD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BpV-c3-2L3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="-21.428571428571427"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IX8-VJ-0FD">
+            <objects>
+                <viewController id="DM7-li-fab" customClass="ViewController" customModule="pokemonEjercicio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dOl-mf-q0E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poke_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="6M2-oS-oeB">
+                                <rect key="frame" x="20" y="88" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="8Ih-UG-pvG"/>
+                                    <constraint firstAttribute="height" constant="374" id="SX9-CH-xNt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="row-M8-vEY">
+                                <rect key="frame" x="20" y="512" width="374" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="aWJ-06-FKC"/>
+                                    <constraint firstAttribute="width" constant="374" id="im3-IV-PBI"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="53" name="AcademyEngravedLetPlain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9GX-uO-uxd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6M2-oS-oeB" firstAttribute="top" secondItem="9GX-uO-uxd" secondAttribute="top" id="4Mc-H7-PYN"/>
+                            <constraint firstItem="row-M8-vEY" firstAttribute="leading" secondItem="9GX-uO-uxd" secondAttribute="leading" constant="20" id="GlR-e4-bo1"/>
+                            <constraint firstItem="9GX-uO-uxd" firstAttribute="trailing" secondItem="6M2-oS-oeB" secondAttribute="trailing" constant="20" id="hqt-dd-vAo"/>
+                            <constraint firstItem="6M2-oS-oeB" firstAttribute="leading" secondItem="9GX-uO-uxd" secondAttribute="leading" constant="20" id="hua-QQ-eXz"/>
+                            <constraint firstItem="9GX-uO-uxd" firstAttribute="trailing" secondItem="row-M8-vEY" secondAttribute="trailing" constant="20" id="i1C-WQ-tv6"/>
+                            <constraint firstItem="row-M8-vEY" firstAttribute="top" secondItem="6M2-oS-oeB" secondAttribute="bottom" constant="50" id="tf3-pG-2yx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EOG-Zc-sqO"/>
+                    <connections>
+                        <outlet property="detailPokemon" destination="6M2-oS-oeB" id="Pcf-Eb-qUq"/>
+                        <outlet property="namePokemon" destination="row-M8-vEY" id="cDq-xr-hJQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLF-BG-dgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982.608695652174" y="-21.428571428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RmK-NN-sBM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TEM-38-Dr7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f8I-aW-Loe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xBT-lF-69W" kind="relationship" relationship="rootViewController" id="HzX-Li-Unw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLa-7o-ReI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="-21.428571428571427"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Poke_Icon" width="118" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
